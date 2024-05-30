@@ -118,7 +118,7 @@ a {
 
 .section-two .container {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
     gap: 16px;
 }
 
@@ -132,12 +132,12 @@ a {
 .box {
     height: 100px;
     width: 100px;
-    border-radius: 6px;
 }
 
 .description {
     width: 200px;
     text-align: center;
+    padding: 5px 0px 0px 24px; /* little hack because imgs don't fit perfectly in their boxes*/
 }
 
 .section-three {
