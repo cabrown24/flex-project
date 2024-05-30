@@ -2,16 +2,24 @@ html {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
 .header-container {
     background-color: #1F2937;
     color: white;
     display: flex;
     justify-content: space-between;
     padding: 8px 52px;
+    flex: 0;
 }
 
 .header-logo {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
 }
 
@@ -29,29 +37,123 @@ a {
     font-size: 18px;
 }
 
+/* For Debugging */
+.header-container,
+.footer,
+.section-one,
+.section-two,
+.section-three,
+.section-four,
+.left,
+.right,
+.box-pair,
+.description,
+.section-two-header {
+    border: red 2px solid;
+}
+
 .section-one {
     background-color: #1F2937;
     color: #E5E7EB;
+    flex: 1;
+    display: flex;
+    justify-content:center;
+    padding: 52px;
+    gap: 10px
 }
+
+.section-one .left {
+    width: 500px;
+}
+
+.section-one .right {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3b485b;
+    color: #b2b3b0;
+    border-radius: 4px;
+}
+
+.section-one-header {
+    font-weight: bolder;
+    font-size: 48px;
+    color: #F9FAF8;
+}
+
+.simple-text {
+    font-size: 18px;
+    color: #E5E7EB;
+    margin-bottom: 12px;
+}
+
 
 .section-one button {
     background-color: #3882F6;
-    border-color: 
+    border-style: none;
+    border-radius: 5px;
+    color: #E5E7EB;
+    padding: 6px 24px
 }
 
 .section-two {
     background-color: #A3CEF1;
+    flex: 1;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 12px 0px 52px 0px;
 }
+
+.section-two-header {
+    font-size: 32px;
+    font-weight: bolder;
+    color: #1F2937;
+    margin-bottom: 12px;
+}
+
+.section-two .container {
+    display: flex;
+    justify-content: space-around;
+    gap: 16px;
+}
+
+.box-pair {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:12px;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    border: #3882F6 2px solid;
+    border-radius: 6px;
+}
+
+.description {
+    width: 200px;
+    text-align: center;
+}
+
+
 
 .section-three {
     background-color: #6096BA;
+    flex: 1;
 }
 
 .section-four {
     background-color: #A3CEF1;
+    flex: 1;
 }
 
 .footer {
     background-color: #1F2937;
     color: #E5E7EB;
+    flex: 0;
+    display: flex;
+    justify-content: center;
 }
